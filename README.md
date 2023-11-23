@@ -47,7 +47,7 @@ This guide provides step-by-step instructions on how to use a custom-built web s
 
 4. **Data Processing**: After extraction, the script processes and organizes this data into a structured format.
 
-5. **Output**: The script will output CSV files for each type of VM (Linux, RHEL, Windows) and a consolidated CSV file named `consolidated_uae_north.csv`.
+5. **Output**: The script will output CSV files for each type of VM (Linux, RHEL, Windows) and a consolidated CSV file named `consolidated.csv`.
 
 #### Troubleshooting
 - If the script fails to run, check that all libraries are installed, and the Chrome WebDriver is correctly set up and added to your system's PATH.

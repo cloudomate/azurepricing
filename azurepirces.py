@@ -4,6 +4,10 @@ import re
 from selenium import webdriver
 from selenium.webdriver.support.ui import Select
 
+column1="Pay as you go"
+column2="1 year savings plan"
+column3="1 year savings plan"
+
 def web_driver():
     driver=webdriver.Chrome("./chromedriver")
     driver.get()
@@ -23,9 +27,9 @@ def create_price_sheet(f,os_name):
         for table in tables:
             th=table.find("thead").find("tr")
             th_data = [thd.text for thd in th.find_all("th")]
-            payug_index=th_data.index("Pay as you go")
-            ri1_index=th_data.index("1 year reserved")
-            ri3_index=th_data.index("3 year reserved")
+            payug_index=th_data.index(column1)
+            ri1_index=th_data.index(column2)
+            ri3_index=th_data.index(column3)
             for tr in table.find_all("tr"):
                 row = [ td.text  if bool(re.search('[a-zA-Z]',td.text)) == True else "0.0" for td in tr.find_all('td')]
                 # row = [ td.text for td in tr.find_all('td') ]
