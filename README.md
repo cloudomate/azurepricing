@@ -6,14 +6,14 @@ This guide provides step-by-step instructions on how to use a custom-built web s
 #### Requirements
 - Google Chrome Browser
 - Python 3.x
-- Required Python libraries: `selenium`, `pandas`, `bs4` (BeautifulSoup)
+- Required Python libraries: `pandas`, `bs4` (BeautifulSoup)
 - HTML files of the web pages to be scraped (named as `linux.html`, `rhel.html`, `windows.html`)
 
 #### Setup
 1. **Install Python Libraries**: 
    Install the required Python libraries by running the following command in your terminal or command prompt:
    ```
-   pip install selenium pandas beautifulsoup4
+   pip install pandas beautifulsoup4
    ```
 
 2. **Download Chrome WebDriver**:
@@ -43,7 +43,7 @@ This guide provides step-by-step instructions on how to use a custom-built web s
 
 2. **Run the Script**: Execute the script. This can typically be done by pressing a run button in your IDE or by typing `python your_script_name.py` in the terminal, where `your_script_name.py` is the name of your script file.
 
-3. **Web Scraping**: The script will use Selenium and BeautifulSoup to read through the provided HTML files and extract relevant pricing data.
+3. **Web Scraping**: The script will use BeautifulSoup to read through the provided HTML files and extract relevant pricing data.
 
 4. **Data Processing**: After extraction, the script processes and organizes this data into a structured format.
 

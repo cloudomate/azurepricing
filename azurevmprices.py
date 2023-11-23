@@ -1,23 +1,10 @@
 from bs4 import BeautifulSoup
 import pandas as pd
 import re
-from selenium import webdriver
-from selenium.webdriver.support.ui import Select
-from selenium.webdriver.chrome.options import Options
 
 column1="Pay as you go"
 column2="1 year savings plan"
 column3="1 year savings plan"
-
-def web_driver():
-    chrome_options = Options()
-    chrome_options.add_argument("--headless")  # Enables headless mode
-    chrome_options.add_argument("--no-sandbox")  # Bypass OS security model, required for Linux
-    chrome_options.add_argument("--disable-dev-shm-usage")  # Overcome limited resource problems
-    driver=webdriver.Chrome(options=chrome_options)
-    driver.get()
-    x = driver.find_element_by_xpath('//*[@id="pricing"]/div/div[4]/form/div/div[1]/div/select')
-    drop=Select(x)
 
 def create_price_sheet(f,os_name):
     print(f"parsing data for {os_name}")
