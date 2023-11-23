@@ -1,7 +1,7 @@
 ### User Guide for Web Scraping and Data Processing Tool
 
 #### Introduction
-This guide provides step-by-step instructions on how to use a custom-built web scraping and data processing tool. It's designed to extract pricing information for virtual machines from specific web pages and consolidate this data into a CSV file. As a prerequiste you will need to have the html files copied in the folder, this needs to be done by visiting the website and copying the files, for chrome 
+This guide provides step-by-step instructions on how to use a custom-built web scraping and data processing tool. It's designed to extract pricing information for virtual machines from specific web pages and consolidate this data into a CSV file. As a prerequiste you will need to have the html files copied in the folder, this needs to be done by visiting the website and copying the files, for chrome you can use developer tool to copy the html body 
 
 #### Requirements
 - Google Chrome Browser
