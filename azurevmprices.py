@@ -4,7 +4,7 @@ import re
 
 column1="Pay as you go"
 column2="1 year savings plan"
-column3="1 year savings plan"
+column3="3 year savings plan"
 
 def create_price_sheet(f,os_name):
     print(f"parsing data for {os_name}")
@@ -34,6 +34,7 @@ def create_price_sheet(f,os_name):
                     data_in_cat.append(data_row)
         data_to_write.extend(data_in_cat)
     df=pd.DataFrame(data_to_write)
+    df.columns=["Instance Family","Instance",column1,column2,column3,"OS"]
     df.to_csv(os_name+".csv")
     f.close()
     return data_to_write
@@ -47,4 +48,6 @@ for html in html_files:
     consolidated_data.extend(create_price_sheet(f,html))
     f.close()
 
-pd.DataFrame(consolidated_data).to_csv("consolidated.csv")
+df2 = pd.DataFrame(consolidated_data)
+df2.columns=["Instance Family","Instance",column1,column2,column3,"OS"]
+df2.to_csv("consolidated.csv")
