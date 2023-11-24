@@ -16,26 +16,7 @@ This guide provides step-by-step instructions on how to use a custom-built web s
    pip install pandas beautifulsoup4
    ```
 
-2. **Download Chrome WebDriver**:
-   - Go to the [Chrome WebDriver Downloads page](https://sites.google.com/chromium.org/driver/).
-   - Download the version of WebDriver that matches your version of Google Chrome. To check your Chrome version, go to `chrome://version/` in your Chrome browser.
-   - Unzip the downloaded file to extract the WebDriver.
-
-3. **Setting Up Chrome WebDriver**:
-   - Place the unzipped Chrome WebDriver (`chromedriver.exe` for Windows, `chromedriver` for macOS or Linux) in a known directory on your computer.
-   - Add the directory containing the WebDriver to your system's PATH. This allows the script to access WebDriver without specifying its full path.
-      - For Windows:
-        - Right-click on 'This PC' or 'My Computer' and select 'Properties'.
-        - Click on 'Advanced system settings' and then 'Environment Variables'.
-        - Under 'System Variables', find and select the 'Path' variable, then click 'Edit'.
-        - Add the full path to the directory containing `chromedriver.exe`.
-        - Click 'OK' to save the changes.
-      - For macOS/Linux:
-        - Open Terminal.
-        - Use the command `export PATH=$PATH:/path/to/directory` (replace `/path/to/directory` with the directory containing `chromedriver`).
-        - To make this change permanent, add the export command to your shell's profile script (like `.bash_profile` or `.bashrc`).
-
-4. **HTML Files**: 
+2. **HTML Files**: 
    Place the HTML files (`linux.html`, `rhel.html`, `windows.html`) in the same directory as the script.
 
 #### How to Use
